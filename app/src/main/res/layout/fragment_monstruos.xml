@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".monstruosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_Bestias"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bestias"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Hibridos"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Malditos"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TituloMonstruos"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btn_Malditos"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malditos"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Insectoides"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Draconido"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Bestias"
+            app:layout_constraintTop_toBottomOf="@+id/TituloMonstruos"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btn_Hibridos"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hibridos"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Relictos"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Insectoides"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Bestias" />
+
+        <Button
+            android:id="@+id/btn_Insectoides"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insectoides"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Espectros"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Necrofafos"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Hibridos"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Malditos" />
+
+        <Button
+            android:id="@+id/btn_Draconido"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dracónidos"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Necrofafos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Malditos"
+            app:layout_constraintTop_toBottomOf="@+id/TituloMonstruos"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btn_Relictos"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relictos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Espectros"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Hibridos" />
+
+        <Button
+            android:id="@+id/btn_Espectros"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espectros"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Vampiros"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Relictos"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Insectoides" />
+
+        <Button
+            android:id="@+id/btn_Vampiros"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vampiros"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Espectros"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Necrofafos" />
+
+        <Button
+            android:id="@+id/btn_Necrofafos"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Necrofagos"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Vampiros"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Insectoides"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Draconido" />
+
+        <TextView
+            android:id="@+id/TituloMonstruos"
+            style="@style/Titulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Bestiario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

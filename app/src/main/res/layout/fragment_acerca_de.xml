@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaDeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Titulo_AcercaDeS"
+            style="@style/Titulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Acerca De:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button16"
+            style="@style/Btn_Inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Inicio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/button16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo_AcercaDeS">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Los cuentos fueron publicados inicialmente por la revista polaca Fantastyka, comenzando a mediados de la década de 1980. El primer cuento, llamado Wiedźmin (El brujo), fue escrito en 1986 para un concurso realizado por dicha publicación, quedando en el tercer lugar. Posteriormente las cuatro primeras historias que retratan al brujo Geralt de Rivia fueron presentadas en una colección de cuentos titulada Wiedźmin en conjunto con Droga, z której się nie wraca (El camino sin retorno), que transcurre antes de las historias del brujo.  La segunda colección de cuentos publicada fue Miecz przeznaczenia (La espada del destino). Subsecuentemente El último deseo fue publicado tras ésta, sustituyendo a Wiedźmin como el primero de los libros por orden cronológico, al incluir todos los cuentos de la saga salvo por El camino sin retorno, convirtiéndose en el principio de la historia de manera retroactiva.  Entre 1994 y 1999 fueron publicadas cinco novelas que componen el cuerpo central de la saga. Estas son: La sangre de los elfos, Tiempo de odio, Bautismo de fuego, La torre de la golondrina y La dama del lago.  Posteriormente fue publicado Coś się kończy, coś się zaczyna (Cuando algo termina, algo comienza), una colección conteniendo un final alternativo para la saga, escrito inicialmente para los amigos de Sapkowski, que incluía otras historias cortas sin conexión directa con la serie. En algunas ediciones polacas los cuentos El camino sin retorno y Cuando algo termina, algo comienza fueron adicionados a El último deseo o La espada del destino.  En 2013, Sapkowski regresó a la serie con una última novela, Estación de tormentas. Esta es una historia independiente de la saga central." />
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

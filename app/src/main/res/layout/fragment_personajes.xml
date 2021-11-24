@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personajesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Titulo_Personajes"
+            style="@style/Titulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Personajes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_Geralt"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher_foreground"
+            android:backgroundTint="@color/Dorado"
+            android:drawableBottom="@drawable/geralt"
+            android:text="Grealt de Rivia"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Jaskier"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Yennefer"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo_Personajes"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btn_Yennefer"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yennefer de Vengerberg"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Vesemir"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Ciri"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Geralt"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo_Personajes"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btn_Ciri"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciri"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Sardinilla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Yennefer"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo_Personajes"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btn_Jaskier"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaskier"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Vesemir"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Geralt" />
+
+        <Button
+            android:id="@+id/btn_Sardinilla"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sardinilla"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Vesemir"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Ciri" />
+
+        <Button
+            android:id="@+id/btn_Vesemir"
+            style="@style/Btn_Select_Personajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vesemir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_Sardinilla"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_Jaskier"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Yennefer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

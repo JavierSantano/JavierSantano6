@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Btn_Inicio">
+        <item name="android:width">350dp</item>
+        <item name="android:height">200dp</item>
+        <item name="android:textSize">36dp</item>
+        <item name="android:backgroundTint">@color/Granate</item>
+    </style>
+    <style name="Titulos">
+        <item name="fontFamily">@font/medievalsharp</item>
+        <item name="android:textColor">@color/Granate</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+    <style name="Btn_Select_Personajes">
+        <item name="android:width">125dp</item>
+        <item name="android:height">125dp</item>
+        <item name="android:backgroundTint">@color/Dorado</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:gravity">bottom </item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="background">
+        <item name="android:background">@color/Gris_fondo</item>
+    </style>
+</resources>
